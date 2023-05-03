@@ -9,7 +9,7 @@ Pregled
 - Program se sastoji iz dva fajla: Start.java i Calculator.java 
 - Program prima unose i ispisuje rezultat putem Start.java klase koja sadrzi glavnu metodu main
 - Klasa Calculator.java sadrzi logiku za izvrsavanje matematičkih operacija
--Program je besplatan za koristenje jer ima MIT licencu
+- Program je besplatan za koristenje jer ima MIT licencu
 
 Staticka analiza
 Calculator.java - line 18 - metodu ‘ToString’ treba preimenovati kako bi se izbjegla zamjena sa metodom ‘toString’ iz super klase "java.lang.Object“
@@ -17,7 +17,6 @@ Calculator.java - line 24 - treba preimenovati metodu ‘Run’ da odgovara regu
 Calculator.java - line 53 - petlja ‘for’ se moze zamijeniti for-each petljom
 Calculator.java - line 70 - promjenjiva ‘textResult’ je suvisna jer nije potrebna za dalju upotrebu u kodu
 Calculator.java - line 74 - treba preimenovati metodu ‘Calculate’ da odgovara regularnom izrazu
-
 Calculator.java - line 87 - iz if bloka se moze izdvojiti Calculate(numbers, operations); return; jer ne utice na izvrsavanje uslova
 Calculator.java - line 138 - iz if bloka se moze izdvojiti Calculate(numbers, operations); return; jer ne utice na izvrsavanje uslova
 Calculator.java - line 183 – return se treba izbaciti
